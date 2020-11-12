@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="utf-8" />
+    <title>Pregled</title>
+
+    <style type="text/css">
+        /*Postavljanje slike i fonta*/
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Century Gothic';
+            background-image: url(Slika3.jpeg);
+            background-size: cover;
+        }
+
+        .main {
+            float: right;
+            list-style-type: none;
+            margin-top: 25px;
+        }
+
+        .main2 {
+            float: left;
+            list-style-type: none;
+            margin-top: 25px;
+        }
+
+        .main  .inputBox {
+            display: inline-block;
+        }
+
+        .main2 .inputBox {
+            display: inline-block;
+        }
+
+        /*Posavljanje gumbova bez obruba*/
+        .main  a {
+            text-decoration: none;
+            color: #000000;
+            padding: 5px 20px;
+            border: 1px solid transparent;
+            transition: 0.5s ease;
+        }
+
+        /*boja*/
+        .main  a:hover {
+            background-color: #ff7256;
+            color: #ffffff;
+        }
+
+        /*Posavljanje gumbova bez obruba*/
+        .main2 a {
+            text-decoration: none;
+            color: #000000;
+            padding: 5px 20px;
+            border: 1px solid transparent;
+            transition: 0.5s ease;
+        }
+
+            /*boja*/
+             .main2 a:hover {
+                background-color: #ff7256;
+                color: #ffffff;
+            }
+
+        /*Centriranje*/
+        .box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            /*Bijela pozadina sa sjenom*/
+            width: 400px;
+            padding: 30px;
+            background: rgba(128, 128, 128, 0.5);
+            box-sizing: border-box;
+            box-shadow: 0px 15px 25px rgba(0,0,0,2);
+            border-radius: 10px;
+        }
+
+        .inputBox {
+            margin: 0 0 20px;
+            padding: 0;
+            color: #000000;
+            text-align: center;
+        }
+
+        .box .inputBox {
+            position: relative;
+        }
+
+            .box .inputBox input {
+                width: 100%;
+                padding: 15px 0;
+                font-size: 16px;
+                color: #000000;
+                margin-bottom: 40px;
+                /*Postavljanje obruba*/
+                border: none;
+                border-bottom: 1px solid #c72323;
+                outline: none;
+                background: transparent;
+            }
+
+        /* Pozicjoniranje šifre i naziva iznad*/
+        .box .inputBox label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 5px 0;
+            font-size: 16px;
+            color: #000000;
+            pointer-events: none;
+            transition: .5s;
+        }
+
+        /*Pomicanje naziva i šifre unutra prilikom  klika*/
+        .box .inputBox input:focus ~ label,
+        /*Koristim valid da se prilikom unosa ne podudaraju šifra i naziv*/
+        .box .inputBox input:valid ~ label {
+            top: -25px;
+            left: 0;
+            color: #c72323;
+            font-size: 18px;
+        }
+
+        /*postavljanje gumba*/
+        .box input[type="submit"] {
+            background: transparent;
+            border: none;
+            outline: none;
+            color: #ffffff;
+            background: #c72323;
+            padding: 6px 12px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+            /*postavljanje boje na gumb*/
+            .box input[type="submit"]:hover {
+                background-color: #cb4343;
+            }   
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main2">
+        <a href="file:///C:/Users/Nikolina/Desktop/Projekti/WEB1/Unos/Unos.html">Prethodno</a>
+    </div>
+
+    <div class="main">
+        <a href="file:///C:/Users/Nikolina/Desktop/Projekti/WEB1/Meni/Meni.html">Slijedeće</a>
+    </div>
+
+    <div class="box">
+        <form>
+            <div class="inputBox">
+                <input type="number" name="" required="">
+                <label> Šifra</label>
+            </div>
+            <div class="inputBox">
+                <input type="text" name="" required="">
+                <label> Naziv</label>
+            </div>
+            <input type="submit" name="" value="DODAJ">
+        </form>
+    </div>
+</body>
+</html>

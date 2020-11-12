@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+
+    <style type="text/css">
+       /*Postavljanje slike i fonta*/
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Century Gothic';
+            background-image: url(Slika2.jpeg);
+            background-size: cover;
+        }
+
+
+        .main {
+            float: right;
+            list-style-type: none;
+            margin-top: 25px;
+        }
+
+        .main2 {
+            float: left;
+            list-style-type: none;
+            margin-top: 25px;
+        }
+
+        .main .inputBox {
+            display: inline-block;
+        }
+
+        .main2 .inputBox {
+            display: inline-block;
+        }
+
+        /*Posavljanje gumbova bez obruba*/
+        .main a {
+            text-decoration: none;
+            color: #000000;
+            padding: 5px 20px;
+            border: 1px solid transparent;
+            transition: 0.5s ease;
+        }
+
+            /*boja*/
+            .main a:hover {
+                background-color: #808080;
+                color: #ffffff;
+            }
+
+        /*Posavljanje gumbova bez obruba*/
+        .main2 a {
+            text-decoration: none;
+            color: #000000;
+            padding: 5px 20px;
+            border: 1px solid transparent;
+            transition: 0.5s ease;
+        }
+
+            /*boja*/
+            .main2 a:hover {
+                background-color: #808080;
+                color: #ffffff;
+            }
+
+        /*Centriranje*/
+        .log {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            /*Bijela pozafina sa sjenom*/
+            width: 300px;
+            padding: 30px;
+            background: rgba(128, 128, 128, 0.5);
+            box-sizing: border-box;
+            box-shadow: 0px 15px 25px rgba(0,0,0,2);
+            border-radius:10px;
+        }
+
+        .log h2{
+            margin:0 0 30px;
+            padding:0;
+            color:#000000;
+            text-align:center;
+        }
+
+        .log .inputLog{
+            position:relative;
+        }
+
+        .log .inputLog input{
+            width:100%;
+            padding:10px 0;
+            font-size:16px;
+            color:#000000;
+            margin-bottom:30px;
+            /*Postavljanje obruba*/
+            border:none;
+            border-bottom:1px solid #000000;
+            outline:none;
+            background:transparent;
+        }
+        /* Pozicjoniranje Username-a i passworda iznad*/
+            .log .inputLog label {
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 10px 0;
+                font-size: 16px;
+                color: #000000;
+                pointer-events:none;
+                transition:.5s;
+            }
+            /*Pomicanje Username-a i passworda unutra prilikom  klika*/
+            .log .inputLog input:focus ~ label,
+            /*Koristim valid da prilikom unosa ne poklapaju se ime i lozinka*/
+            .log .inputLog input:valid ~ label{
+            top:-18px;
+            left:0;
+            color:#B266FF;
+            font-size:14px;
+            }
+            /*postavljanje gumba*/
+            .log input[type="submit"]{
+                background:transparent;
+                border:none;
+                outline:none;
+                color:#000000;
+                background:#808080;
+                padding:5px 12px;
+                cursor:pointer;
+                border-radius:5px;
+            }
+
+            /*postavljanje boje na gumb*/
+        .log input[type="submit"]:hover {
+            background-color:#ffffff;
+        }
+
+    </style>
+
+        <link rel="stylesheet" href="style.css" >
+   </head >
+<body>
+
+    <div class="main2">
+        <a href="file:///C:/Users/Nikolina/Desktop/Projekti/WEB1/Meni/Meni.html">Prethodno</a>
+    </div>
+
+    <div class="main">
+        <a href="file:///C:/Users/Nikolina/Desktop/Projekti/WEB1/Unos/Unos.html">Slijedeće</a>
+    </div>
+
+    <div class="log">
+        <h2> Login</h2>
+        <form>
+            <div class="inputLog">
+                <input type="text" name="" required="">
+                <label> Email</label>
+            </div>
+            <div class="inputLog">
+                <input type="password" name="" required="">
+                <label> Password</label>
+            </div>
+            <input type="submit" name="" value="LOGIN">
+        </form>
+    </div>
+</body>
+</html >

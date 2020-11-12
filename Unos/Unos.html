@@ -1,0 +1,261 @@
+﻿<!DOCTYPE html>
+<html lang="hr">
+<head>
+	<meta charset="utf-8" />
+	<title>Unos</title>
+
+	<style type="text/css">
+
+        body {
+            display: table-cell;
+            vertical-align: middle;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url(Slika4.jpg);
+        }
+
+        tr td {
+            font-family: 'Century Gothic', cursive;
+            font-size: 20px;
+            text-align: right;
+            color: black;
+        }
+
+        .main {
+            float: right;
+            list-style-type: none;
+            margin-top: 25px;
+        }
+
+        .main2 {
+            float: left;
+            list-style-type: none;
+            margin-top: 25px;
+        }
+
+        .main .inputBox {
+            display: inline-block;
+        }
+
+        .main2 .inputBox {
+            display: inline-block;
+        }
+
+        /*Posavljanje gumbova bez obruba*/
+        .main a {
+            text-decoration: none;
+            color: #000000;
+            padding: 3px 20px;
+            border: 1px solid transparent;
+            transition: 0.5s ease;
+        }
+
+            /*boja*/
+            .main a:hover {
+                background-color: #e92c2c;
+                color: #ffffff;
+            }
+
+        /*Posavljanje gumbova bez obruba*/
+        .main2 a {
+            text-decoration: none;
+            color: #000000;
+            padding: 3px 20px;
+            border: 1px solid transparent;
+            transition: 0.5s ease;
+        }
+
+            /*boja*/
+            .main2 a:hover {
+                background-color: #e92c2c;
+                color: #ffffff;
+            }
+
+		
+		/* Crvena pozadina za nevazeci input, ukljucujuci i border color */
+		input:invalid {
+			background-color: rgba(213, 94, 94, 0.2);
+			border-bottom-color: red;	 
+			border-color: red;
+			box-shadow: none;
+		}
+
+		/* Bijela pozadina sa sjenom */
+		.web_form {
+			background-color: rgba(255, 255, 255, 0.3);
+			box-shadow: 0px 0px 60px 20px rgba(0,0,0,1);
+			border-radius: 40px;
+		}
+
+		/* Padding izmedju bijele pozadine i teksta*/
+		.web_form_middle {
+			padding-left: 30px;
+			padding-right: 20px;
+			padding-top: 3%;
+		}
+
+        /*Postavljanje debljine linije */
+        .border {
+            border-style: none;
+            border: 2px solid black;
+        }
+
+        /*Postavljanje debljine linije*/
+        .bottom_line {
+            border: none;
+            border-bottom: 1px solid black;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        /*Centriranje*/
+        html {
+            display: table;
+            margin: auto;
+        }
+
+        h1 {
+            margin-top: 5%;
+            margin-bottom: 3%;
+        }
+
+
+        .button {
+            border-radius: 15%;
+            display: block;
+            width: 12%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border: 1px solid black;
+            background-color: rgba(255,255,255,0.5);
+        }
+
+            /*Postavljanje boje na gumb prilikom klika*/
+			.button:hover {
+				background-color:#e92c2c;
+			}
+
+			.button:active {
+				background-color:#ff0000;
+			}
+
+		.trans {
+			background-color: transparent;
+			border-radius: 10px;
+            
+		}
+
+			.trans:hover {
+				background-color: rgba(255,255,255,0.1);
+			}
+	</style>
+</head>
+<body>
+
+    <div class="main2">
+        <a href="file:///C:/Users/Nikolina/Desktop/Projekti/WEB1/Login/Login.html">Prethodno</a>
+    </div>
+
+    <div class="main">
+        <a href="file:///C:/Users/Nikolina/Desktop/Projekti/WEB1/Pregled/Pregled.html">Slijedeće</a>
+    </div>
+
+    <div class="web_form">
+        <div class="web_form_middle">
+            <form>
+                <table border="0" cellspacing="15" align="center">
+                    <tbody>
+                        <tr>
+                            <td>
+                                ŠIFRA PODUZEĆA
+                            </td>
+
+                            <td>
+                                <input class="trans border" type="number" required>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                NAZIV
+                            </td>
+                            <td>
+                                <input class=" trans bottom_line" type="text" required>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                ADRESA
+                            </td>
+                            <td>
+                                <input class="trans bottom_line" type="text" required>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                POŠTANSKI BROJ
+                            </td>
+                            <td>
+
+                                <input class="trans bottom_line" type="number" required="required">
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                IBAN
+                            </td>
+                            <td>
+                                <input class="trans bottom_line" type="number" required>
+                            </td>
+                            <td>
+                                BANKA
+                            </td>
+                            <td>
+                                <input class="trans bottom_line" type="search">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                OIB
+                            </td>
+                            <td>
+                                <input class="trans bottom_line" type="number">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                KONTAKT
+                            </td>
+                            <td>
+                                <input class="trans bottom_line" type="number">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                OPIS
+                            </td>
+                            <td>
+                                <input class="trans bottom_line" type="text">
+                            </td>
+                        </tr>
+                </table>
+                <br />
+                <button class="button" type="submit">DODAJ</button>
+                <br />
+            </form>
+        </div>
+    </div>
+</body>
+</html>

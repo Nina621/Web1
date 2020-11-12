@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="utf-8" />
+    <title>Šifra Poduzeća</title>
+
+    <style type="text/css">
+        /*Postavljanje slike i fonta*/
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Century Gothic';
+            background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(Slika1.jpeg);
+            background-size: cover;
+        }
+        .box {
+            float: right;
+            list-style-type: none;
+            margin-top: 25px;
+        }
+        .box .inputBox {
+                display: inline-block;
+            }
+
+        /*Posavljanje gumbova bez obruba*/
+        .box .inputBox a{
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 20px;
+            border: 1px solid transparent;
+            transition: 0.5s ease;
+        }
+            /*boja*/
+            .box .inputBox a:hover {
+                background-color: #ff7256;
+                color: #ffffff;
+            }
+
+
+        /*Postavljanje naslova na sredinu*/
+        .title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        /*Font ,velicina i boja naslova*/
+        .title {
+            font-family: monospace,cursive;
+            color: #EED5B7;
+            font-size: 35px;
+        }
+
+        /*Postavljanje loga na stranicu*/
+        .logo img {
+            float: left;
+            width: 100px;
+            height: auto;
+        }
+
+        /*Premještanje loga u desno*/
+        .main {
+            max-width: 1350px;
+            margin: auto;
+        }
+
+
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+        </div>
+        <div class="box">
+            <form>
+                <div class="inputBox">
+                    <a href="file:///C:/Users/Nikolina/Desktop/Projekti/WEB1/Login/Login.html">Login</a>
+                </div>
+                <div class="inputBox">
+                    <a href="file:///C:/Users/Nikolina/Desktop/Projekti/WEB1/Pregled/Pregled.html">Pregled</a>
+                </div>
+                <div class="inputBox">
+                    <a href="file:///C:/Users/Nikolina/Desktop/Projekti/WEB1/Unos/Unos.html">Unos</a>
+                </div>
+            </form>
+        </div>
+        <div class="title">
+            <h1>ŠIFRA PODUZEĆA</h1>
+        </div>
+    </header>
+</body>
+	</html>
